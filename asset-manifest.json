@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/journ/static/js/main.3f16b6f4.js",
+    "static/media/Hiro.png": "/journ/static/media/Hiro.a8d62d66ea1df12e3d71.png",
+    "index.html": "/journ/index.html",
+    "main.3f16b6f4.js.map": "/journ/static/js/main.3f16b6f4.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.3f16b6f4.js"
+  ]
+}
