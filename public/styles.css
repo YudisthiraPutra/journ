@@ -1,0 +1,279 @@
+/*** GENERAL ***/
+body {
+    background: linear-gradient(135deg, #00778F, #01CA69);
+}
+a{
+    width: 100%;
+}
+
+.marked{
+    color: #62FF54;
+}
+
+.in{
+    opacity: 0;
+    animation: slideDown ease 0.5s forwards .1s;
+}
+
+.out{
+    opacity: 1;
+    animation: slideOut ease 0.5s forwards .1s;
+
+}
+
+@keyframes slideDown {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(20px);opacity:1;}
+}
+
+
+@keyframes slideOut {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(20px);opacity:0;}
+}
+
+/*** COMPONENT ***/
+/* PLATFORM */
+#platform{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30px;
+    font-size: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#platform h1{
+    display: inline-block;
+    margin: 7px 0 0 10px;
+}
+
+#platform p{
+    display: inline-block;
+    margin: 8px 10px 0 0;
+    font-size: 0.625rem;
+
+}
+
+
+/* Hiro */
+#hiro{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#hiro .base{
+    width: 500px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#hiro img{
+    width: 100%;
+    margin: auto 0 0 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#hiro .dialogue{
+    position: absolute;
+    left: -35px;
+    top: -20px;
+}
+
+#hiro .base .main{
+    width: 50%;
+    position: relative;
+}
+
+/* DIALOGUE */
+.boxes{
+    width: auto;
+    height: 125px;
+    position: absolute;
+    top: 0;
+}
+
+.spot{
+    position: absolute;
+    top: 45px;
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textboxes{
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 500;
+    font-size: 150.5%;
+    background-color: black;
+    padding: 5px 32px;
+    border-radius: 10px 10px 10px 0;
+    margin:0;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.option{
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight:500;
+    font-size: 150.5%;
+    background-color: black;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px 10px 10px 10px;
+    margin: -1px 0px 5px 0px;
+    border: 0;
+
+}
+
+.option:hover{
+    color: #62FF54;
+    transition: 0.5s;
+}
+
+.spot.out{
+    top: 65px;
+}
+
+.boxes.out{
+    top: 20px;
+}
+
+.writejournal.out{
+    top: 70px
+}
+
+.option.single{
+    width: 100%;
+}
+
+/* WRITE JOURNAL */
+
+.writejournal{
+    width: 60%;
+    height: 52%;
+    display: block;
+    margin: 30px auto 0 auto;
+    position: absolute;
+    top: 50px;
+    left: 21%;
+}
+
+.writeplace{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.writeplace textarea{
+    background-color: black;
+    border: 0px;
+    margin: 0 20px;
+    color: white;
+    font-size: 1rem;
+    width: 95%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.journal{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white solid 2px;
+    width: 95%;
+    margin: 15px auto 0 auto;
+    padding: 10px 0px;
+}
+
+.journal .date{
+    margin: 0;
+    display: inline-block;
+    font-size: 0.938rem;
+}
+
+.journal .mood{
+    margin: auto 0;
+    display: inline-block;
+    font-size: 0.938rem;
+}
+
+.writejournal .option{
+    width: 60%;
+    display:block;
+    text-align: center;
+    margin: auto;
+    bottom: 0;
+}
+
+/* READ ARCHIVE */
+.readarchive{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.readarchive .list{
+    width: 30%;
+    border-right: solid black 3px;
+    height: 90%;
+    margin: auto 0;
+}
+
+.readarchive .content{
+    width: 70%;
+}
+.readarchive textarea{
+    height: 100%;
+}
+.readarchive .option{
+    width: 70%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.readarchive .content .writeplace{
+    width: 80%;
+    height: 50%;
+    margin: 100px auto;
+}
+
+.readarchive .content .writeplace.out{
+    width: 80%;
+    margin-top: 120px;
+}
+
+.readarchive.out{
+    top: 0px;
+}
+
+.static{
+    top: 20px;
+}
